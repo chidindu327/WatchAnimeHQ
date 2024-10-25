@@ -77,19 +77,19 @@ include "inc/controller.php";
                 
                 <?php
                 if (isset($_POST['register'])) {
-                    $firstname = $_POST["firstname"];
-                    $lastname = $_POST["lastname"];
-                    $phone = $_POST["phone"];
-                    $email = $_POST["email"];
-                    $password = $_POST["password"];
+                    @$firstname = $_POST["firstname"];
+                    @$lastname = $_POST["lastname"];
+                    @$phone = $_POST["phone"];
+                    @$email = $_POST["email"];
+                    @$password = $_POST["password"];
 
-                    $sql = "INSERT INTO `users` (`id`, `firstname`, `lastname`, `phone`, `email`, `password`)
-                            VALUES (NULL, '$firstname', '$lastname', '$phone', '$email', '$password')";
+                   $sql = "INSERT INTO users (`firstname`, `lastname`, `phone`, `email`, `password`)
+                            VALUES ('$firstname', '$lastname', '$phone', '$email', '$password')";
 
-                    if ($conn->query($sql) === TRUE) {
+                    if (execute($sql)) {
                         echo "<div class='alert alert-success mt-3'>New User Added Successfully!</div>";
                     } else {
-                        echo "<div class='alert alert-danger mt-3'>Error: " . $sql . "<br>" . $conn->error . "</div>";
+                        echo "<div class='alert alert-danger mt-3'>Error:in the sign up process";
                     }
                 }
                 ?>
