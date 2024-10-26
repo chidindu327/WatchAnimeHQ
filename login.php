@@ -81,6 +81,18 @@ include "inc/dp.php";
 </head>
 
 <body>
+    <!-- Preloader Start -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader End -->
     <div class="login-container">
         <h2 class="text-center mb-4">Welcome Back</h2>
         <h2 class="text-center mb-4">Login</h2>

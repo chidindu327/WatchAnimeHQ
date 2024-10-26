@@ -177,7 +177,7 @@ include "inc/controller.php";
               <div class="down-content">
                 <span class="category">Action</span>
                 <h4>My Hero Academia</h4>
-                <a href="anime-details.html"
+                <a href="currently.php"
                   ><i class="fa fa-info-circle"></i
                 ></a>
               </div>
