@@ -1,6 +1,3 @@
-<?php
-include "inc/controller.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,9 +41,43 @@ include "inc/controller.php";
     <!-- Preloader End -->
 
     <!-- Header Area Start -->
-    <?php 
-    include "inc/nav.php";
-    ?>
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- Logo Start -->
+              <a
+                href="index.html"
+                class="navbar-brand d-flex align-items-center"
+              >
+                <img
+                  src="assets/images/logo.PNG"
+                  alt="WatchAnimeHQ"
+                  class="img-fluid w-auto"
+                style="max-height: 130px;"
+                />
+              </a>
+              <!-- Logo End -->
+
+              <!-- Menu Start -->
+              <ul class="nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="anime-list.html">Anime List</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <!-- <li><a href="latest-episodes.html">Latest Episodes</a></li> -->
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Sign In</a></li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- Menu End -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Header Area End -->
 
     <!-- Main Banner Section Start -->
@@ -78,7 +109,7 @@ include "inc/controller.php";
           </div>
           <div class="col-lg-4 offset-lg-2">
             <div class="right-image">
-              <img src="assets/images/anime-banner.jpg" alt="Anime Banner" />
+              <img src="assets/images/anime5.jpg" alt="Anime Banner" />
             </div>
           </div>
         </div>
@@ -95,7 +126,7 @@ include "inc/controller.php";
               <div class="item">
                 <div class="image">
                   <img
-                    src="assets/images/featured-anime-01.png"
+                    src="assets/images/anime2.jpg"
                     alt=""
                     style="max-width: 44px"
                   />
@@ -109,7 +140,7 @@ include "inc/controller.php";
               <div class="item">
                 <div class="image">
                   <img
-                    src="assets/images/featured-anime-02.png"
+                    src="assets/images/anime3.jpg"
                     alt=""
                     style="max-width: 44px"
                   />
@@ -123,7 +154,7 @@ include "inc/controller.php";
               <div class="item">
                 <div class="image">
                   <img
-                    src="assets/images/featured-anime-03.png"
+                    src="assets/images/anime4.jpg"
                     alt=""
                     style="max-width: 44px"
                   />
@@ -137,7 +168,7 @@ include "inc/controller.php";
               <div class="item">
                 <div class="image">
                   <img
-                    src="assets/images/featured-anime-04.png"
+                    src="assets/images/anime5.jpg"
                     alt=""
                     style="max-width: 44px"
                   />
@@ -177,7 +208,7 @@ include "inc/controller.php";
               <div class="down-content">
                 <span class="category">Action</span>
                 <h4>My Hero Academia</h4>
-                <a href="currently.php"
+                <a href="anime-details.html"
                   ><i class="fa fa-info-circle"></i
                 ></a>
               </div>
